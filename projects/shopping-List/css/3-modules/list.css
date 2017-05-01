@@ -1,0 +1,49 @@
+.list {
+  display: block;
+  background-color: #AACCEE;
+  width: 500px;
+  min-height: 800px;
+  margin: 10px auto 0 auto;
+  padding-top: 15px;
+  text-align: center;
+  }
+  .list button {
+    background-color: #263e59;
+    color: #8ee8d1;
+    border: none;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer; }
+  .list input {
+    background-color: #263e59;
+    color: #8ee8d1;
+    border: none;
+    margin: 5px;
+    padding: 5px; }
+  .list ul {
+    list-style-type: none; }
+  .list li {
+    display: block;
+    background-color: #2299cc;
+    color: #efe;
+    width: 90%;
+    margin: 1% auto 1% auto;
+    font-size: 2em;
+    -webkit-border-radius: 4px;
+            border-radius: 4px; }
+
+.deleteBtn {
+  display: inline-block;
+  color: #fff;
+  float: right;
+  margin: 5px;
+  background-color: #263e59;
+  width: 40px;
+  font-size: 26px;
+  cursor: pointer;
+  -webkit-border-radius: 2px;
+          border-radius: 2px; }
+
+.deleteBtn:hover {
+  background-color: #99CCff;
+  color: #263e59; }

@@ -1,0 +1,20 @@
+<div>
+  <div ng-show="product" class="well">
+    <h3>Product ID:</h3>
+    <p>{{ product.id }}</p>
+    <h3>Name:</h3>
+    <p>{{ product.name }}</p>
+    <h3>Units in stock:</h3>
+    <p>{{ product.stock }}</p>
+  </div>
+  <div ng-show="product" class="well well-light">
+    <div class="alert alert-success" role="alert" ng-show="success">{{ success }}</div>
+    <div class="alert alert-warning" role="alert" ng-show="warnings" ng-repeat="warning in warnings">{{ warning }}</div>
+    <input type="number" name="newStock" id="newStock" min="0" value="0" ng-model="newStock">
+    <a class="btn btn-success pad-left" min="0" ng-click="addStock()">Add Stock</a>
+  </div>
+  <div ng-hide="product" class="well">
+    <h3>Product Not Found</h3>
+  </div>
+  <a href="javascript:history.back()" class="btn btn-primary">Back</a>
+</div>

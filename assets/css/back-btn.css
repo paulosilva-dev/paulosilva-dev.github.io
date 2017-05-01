@@ -1,0 +1,33 @@
+a.back-btn {
+	display: block;
+	position: fixed;
+	top: 60px;
+	left: 10px;
+	padding: 6px 0 6px 0;
+	margin: 0;
+	width: 36px;
+	height: 32px;
+	background-color: #000;
+	border-radius: 4px;
+	opacity: 0.4;
+	transition: all 400ms;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 32px;
+	color: #fafafa;
+	overflow: hidden;
+	line-height: 1;
+	box-sizing: content-box;
+}
+a.back-btn:hover {
+	background-color: #10ce9f;
+	opacity: 1;
+	width: 120px;
+}
+
+a.back-btn img {
+	display: block;
+	float: left;
+	padding: 0;
+	margin: 0 0 10px 0;
+	transition: all 400ms;
+}

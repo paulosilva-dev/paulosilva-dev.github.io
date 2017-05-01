@@ -1,0 +1,25 @@
+.tech-skills h3 {
+  text-align: left;
+  padding: 2px 2px 4px 8px; }
+
+.tech-skills ul {
+  padding: 0;
+  margin: 0 0 20px 30px;
+  list-style: none; }
+  .tech-skills ul li {
+    display: block;
+    float: left;
+    padding: 2px 10px;
+    margin: 2px 4px;
+    background-color: #00b285;
+    color: #fff;
+    -webkit-border-radius: 4px;
+            border-radius: 4px;
+    -webkit-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out; }
+    .tech-skills ul li:hover {
+      -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+              transform: scale(1.1);
+      background-color: #7fe0c8;
+      color: #244; }

@@ -1,0 +1,97 @@
+.overlay-dark, .img-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.6); }
+
+.img-overlay {
+  z-index: 4; }
+
+.overlay-page {
+  display: none;
+  position: fixed;
+  top: 2%;
+  left: 3%;
+  z-index: 3;
+  width: 94%;
+  max-height: 95%;
+  background-color: #f2f2f2;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  overflow: auto;
+  -webkit-box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.7);
+          box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.7); }
+  .overlay-page a {
+    color: #00af83; }
+    .overlay-page a:hover {
+      color: #46d6b2; }
+  .overlay-page .btn-close {
+    display: block;
+    float: right;
+    height: 36px;
+    width: 48px;
+    background-color: #333;
+    font-size: 30px;
+    text-align: center;
+    padding: 4px 0;
+    -webkit-border-radius: 4px;
+            border-radius: 4px; }
+    .overlay-page .btn-close:hover {
+      background-color: #10ce9f; }
+  .overlay-page iframe {
+    display: block;
+    width: 480px;
+    height: 360px;
+    margin: 0 auto; }
+  .overlay-page p {
+    padding: 16px 32px;
+    max-width: 800px;
+    margin: 0 auto; }
+
+.overlay-enabled {
+  display: block; }
+
+.thumb {
+  display: block;
+  float: left;
+  width: 320px;
+  height: 240px;
+  margin: 20px 40px; }
+
+#full-img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 2% auto; }
+
+/* 960px breakpoint*/
+@media only screen and (max-width: 960px) {
+  .thumb {
+    clear: both;
+    display: block;
+    float: none;
+    width: 320px;
+    height: 240px;
+    margin: 20px auto; } }
+
+/* 545px breakpoint*/
+@media only screen and (max-width: 545px) {
+  .overlay-page iframe {
+    display: block;
+    width: 240px;
+    height: 180px;
+    margin: 0 auto; } }
+
+/* 480px breakpoint*/
+@media only screen and (max-width: 480px) {
+  .thumb {
+    clear: both;
+    display: block;
+    float: none;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto; } }

@@ -1,0 +1,125 @@
+nav {
+  display: block;
+  position: absolute;
+  right: 15%;
+  top: 400px;
+  margin: 0;
+  padding: 0;
+  width: 120px;
+  height: 350px;
+  background-color: #222;
+  z-index: 2; }
+  nav a.expand {
+    display: none; }
+  nav .menu a {
+    color: #e5e5e5;
+    display: block;
+    text-align: center;
+    padding: 12px 2px;
+    font-size: 1.1em;
+    -webkit-transition: background-color 200ms;
+    transition: background-color 200ms; }
+    nav .menu a:hover {
+      background-color: #10ce9f; }
+
+.active {
+  background-color: #10ce9f; }
+
+.fixed {
+  position: fixed;
+  top: 140px; }
+
+.back-top {
+  display: block;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  margin: 0;
+  padding: 0 0 0 0;
+  width: 42px;
+  height: 42px;
+  background-color: #222;
+  color: #fff;
+  z-index: 2;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  text-align: center; }
+  .back-top img {
+    padding: 8px 0 0 0; }
+  .back-top:hover {
+    background-color: #10ce9f; }
+
+/* resolution breakpoints */
+@media only screen and (max-width: 1180px) {
+  nav {
+    top: 300px; } }
+
+@media only screen and (max-width: 1010px) {
+  nav {
+    top: 250px; } }
+
+/* 910px breakpoint*/
+@media only screen and (max-width: 910px) {
+  nav {
+    display: block;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    margin: 0;
+    padding: 0;
+    width: 42px;
+    height: 42px;
+    overflow: hidden;
+    -webkit-border-radius: 4px;
+            border-radius: 4px;
+    background-color: #222;
+    z-index: 2; }
+    nav a.expand {
+      display: block;
+      width: 100%;
+      margin: 0 0 8px 0;
+      padding: 4px 8px 0 0;
+      text-align: right;
+      float: right;
+      font-size: 1.6em; }
+    nav .menu a {
+      color: #fff;
+      display: block;
+      width: 100%;
+      text-align: center;
+      float: right;
+      padding: 3px 0;
+      border-bottom: 1px solid #14604d;
+      font-size: 1.4em;
+      -webkit-transition: background-color 200ms;
+      transition: background-color 200ms; }
+      nav .menu a:hover {
+        background-color: #46d6b2; }
+  .menu-open {
+    width: 95%;
+    height: 335px;
+    -webkit-transition: width 150ms, height 200ms 140ms;
+    transition: width 150ms, height 200ms 140ms; }
+  .fixed {
+    top: 10px; } }
+
+/* resolution breakpoints */
+@media only screen and (min-width: 2000px) {
+  nav {
+    right: 20%; } }
+
+@media only screen and (min-width: 2500px) {
+  nav {
+    right: 25%; } }
+
+@media only screen and (max-width: 1700px) {
+  nav {
+    right: 10%; } }
+
+@media only screen and (max-width: 1450px) {
+  nav {
+    right: 5%; } }
+
+@media only screen and (max-width: 1280px) {
+  nav {
+    right: 0; } }

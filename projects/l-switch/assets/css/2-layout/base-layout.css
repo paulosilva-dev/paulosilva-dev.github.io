@@ -1,0 +1,86 @@
+body {
+  background-color: #fafafa;
+  color: #333;
+  font-family: 'Lato', Sans-serif; }
+
+::-moz-selection {
+  background-color: #263e59;
+  color: #dfffff; }
+
+::selection {
+  background-color: #263e59;
+  color: #dfffff; }
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  display: block;
+  margin: 0 0 10px 0;
+  background-color: #def; }
+
+h2 {
+  font-size: 2rem;
+  font-weight: 300; }
+
+h3 {
+  font-size: 1.3rem; }
+
+a, a:visited {
+  color: #2699ee; }
+
+a:hover {
+  color: #ee9933; }
+
+.instructions {
+  display: block;
+  width: 80%;
+  margin: 20px auto;
+  background-color: #eee;
+  text-align: center; }
+
+.level {
+  display: block;
+  width: 40%;
+  margin: 10px auto;
+  background-color: #eee;
+  text-align: center;
+  font-size: 3rem; }
+
+.timer {
+  margin: 10px auto;
+  background-color: #ee9933;
+  text-align: center;
+  font-size: 3rem;
+  color: #fffd88; }
+
+.lost {
+  background-color: #c20;
+  font-size: 4rem;
+  color: #fffd88; }
+
+.menu, .retry {
+  margin: 0 auto 6px;
+  background-color: #e0e0e0;
+  text-align: center;
+  padding: 10px; }
+  .menu h4.btn, .menu a, .retry h4.btn, .retry a {
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    color: #f7f7f7;
+    width: 140px;
+    font-size: 2rem;
+    -webkit-border-radius: 8px;
+            border-radius: 8px;
+    padding: 10px;
+    background-color: #2699ee; }
+    .menu h4.btn:hover, .menu a:hover, .retry h4.btn:hover, .retry a:hover {
+      background-color: #fa3;
+      color: #e30; }
+
+.retry {
+  display: none; }
+
+.retry a {
+  color: #fffd88;
+  background-color: #c20; }

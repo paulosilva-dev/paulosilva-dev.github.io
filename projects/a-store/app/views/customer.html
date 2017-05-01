@@ -1,0 +1,14 @@
+<div>
+  <div ng-show="customer" class="well">
+    <h3>Customer ID:</h3>
+    <p>{{ customer.id }}</p>
+    <h3>Name:</h3>
+    <p>{{ customer.name }}</p>
+    <h3>Address:</h3>
+    <p>{{ customer.address }}</p>
+  </div>
+  <div ng-hide="customer" class="well">
+    <h3>Customer Not Found</h3>
+  </div>
+  <a href="javascript:history.back()" class="btn btn-primary">Back</a>
+</div>

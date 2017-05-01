@@ -1,0 +1,142 @@
+.headers {
+  margin: 140px 0 0 0;
+  display: block;
+  float: left;
+  padding: 10px 0; }
+  .headers h1 {
+    font-size: 2em;
+    text-align: center;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out; }
+    .headers h1:hover {
+      font-size: 2.1em; }
+  .headers h2 {
+    font-size: 2em;
+    text-align: center; }
+  .headers h3 {
+    font-size: 1.5em;
+    text-align: center; }
+
+header {
+  width: 100%;
+  height: 400px;
+  background-color: #10ce9f;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out; }
+
+.profPhoto {
+  float: right;
+  margin-top: 0;
+  border: 10px solid #333;
+  border-bottom: 0;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out; }
+
+/* resolution breakpoints */
+/* 1180px breakpoint*/
+@media only screen and (max-width: 1180px) {
+  header {
+    width: 100%;
+    height: 300px; }
+  .headers {
+    margin: 70px 0 0 0;
+    display: block;
+    float: left;
+    padding: 10px 0; }
+    .headers h1 {
+      font-size: 1.8em;
+      text-align: center; }
+      .headers h1:hover {
+        font-size: 1.7em; }
+    .headers h2 {
+      font-size: 1.7em;
+      text-align: center; }
+    .headers h3 {
+      font-size: 1.5em;
+      text-align: center; }
+  .profPhoto {
+    height: 295px;
+    border: 5px solid #333;
+    border-bottom: 0; } }
+
+/* 1010px breakpoint*/
+@media only screen and (max-width: 1010px) {
+  header {
+    width: 100%;
+    height: 250px; }
+  .headers {
+    margin: 70px 0 0 0;
+    display: block;
+    float: left;
+    padding: 10px 0; }
+    .headers h1 {
+      font-size: 1.6em;
+      text-align: center; }
+      .headers h1:hover {
+        font-size: 1.7em; }
+    .headers h2 {
+      font-size: 1.3em;
+      text-align: center; }
+    .headers h3 {
+      font-size: 1.2em;
+      text-align: center; }
+  .profPhoto {
+    height: 245px;
+    border: 5px solid #333;
+    border-bottom: 0; } }
+
+/* 650px breakpoint*/
+@media only screen and (max-width: 650px) {
+  .headers h2 {
+    font-size: 1.15em; } }
+
+/* 600px breakpoint*/
+@media only screen and (max-width: 600px) {
+  header {
+    width: 100%;
+    height: 400px; }
+  .headers {
+    margin: 0;
+    border-top: 1px solid #333;
+    float: none; }
+    .headers h2 {
+      font-size: 1.4em;
+      text-align: center; }
+  .profPhoto {
+    display: block;
+    float: none;
+    margin: 0 auto 0 auto;
+    padding: 0;
+    height: auto;
+    width: 260px; } }
+
+/* 480px breakpoint*/
+@media only screen and (max-width: 480px) {
+  header {
+    width: 100%;
+    height: 340px; }
+  .headers h1 {
+    font-size: 1.5em;
+    text-align: center; }
+  .headers h2 {
+    font-size: 1.3em;
+    text-align: center; }
+  .headers h3 {
+    font-size: 1.2em;
+    text-align: center; }
+  .profPhoto {
+    display: block;
+    float: none;
+    margin: 0 auto 0 auto;
+    padding: 0;
+    height: auto;
+    width: 200px; } }
+
+/* 350px breakpoint*/
+@media only screen and (max-width: 350px) {
+  .headers h2 {
+    font-size: 1.1em;
+    text-align: center; }
+  .headers h3 {
+    font-size: 1em;
+    text-align: center; } }

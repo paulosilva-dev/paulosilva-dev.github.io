@@ -1,0 +1,35 @@
+<div>
+  <div class="col-md-12">
+    <h2>Orders</h2>
+  </div>
+  <div class="col-md-12">
+    <a href="#/new-order/" class="btn btn-success new-btn">New Order</a>
+  </div>
+  <div class="col-md-12">
+    <div class="form-group">
+      <label for="search">Search</label>
+      <input type="text" class="form-control" id="search" placeholder="Search" ng-model="orderSearch">
+    </div>
+  </div>
+  <table class="table spaced">
+    <tr>
+      <th>Order No</th>
+      <th>Product</th>
+      <th class="hide-sm">Quantity</th>
+      <th class="hide-xs">Customer</th>
+      <th class="hide-xs">Date</th>
+      <th>Dispatched</th>
+    </tr>
+    <tr ng-repeat="order in ordersVM| filter:orderSearch | orderBy:'orderNo':true" class="zebra" ng-class="order.sent? 'bg-success':''">
+      <td>{{ order.orderNo }}</td>
+      <td><a href="#/product/{{order.productID}}">{{ order.productID + ' - ' + order.productName }}</a></td>
+      <td class="hide-sm">{{ order.quantity }}</td>
+      <td class="hide-xs"><a href="#/customer/{{ order.customer }}">{{ order.customer + ' - ' + order.customerName }}</a></td>
+      <td class="hide-xs">{{ order.date }}</td>
+      <td>
+        <a ng-click="sendOrder(order)" class="btn btn-warning small-btn" ng-hide="order.sent">Mark as Dispatched</a>
+        <span ng-show="order.sent">Dispatched</span>
+      </td>
+    </tr>
+  </table>
+</div>

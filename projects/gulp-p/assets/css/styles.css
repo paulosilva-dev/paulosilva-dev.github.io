@@ -1,0 +1,126 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"), url(http://fonts.gstatic.com/s/lato/v11/UyBMtLsHKBKXelqf4x7VRQ.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
+
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"), url(http://fonts.gstatic.com/s/lato/v11/1YwB1sO8YE1Lyjf12WNiUA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 1.5em; }
+
+body {
+  background-color: #fafafa;
+  color: #333;
+  font-family: 'Lato', Sans-serif; }
+
+::-moz-selection {
+  background-color: #fafafa;
+  color: #333; }
+
+::selection {
+  background-color: #fafafa;
+  color: #333; }
+
+h1 {
+  font-size: 2rem;
+  text-align: left; }
+
+h2 {
+  font-size: 1.7rem;
+  text-align: left;
+  font-weight: 500;
+  padding-bottom: 4px;
+  padding-top: 4px; }
+
+h3 {
+  font-size: 1.1rem;
+  text-align: left;
+  font-weight: 600;
+  padding-bottom: 4px;
+  padding-top: 8px; }
+
+a, a:visited {
+  color: #2699ee; }
+
+a:hover {
+  color: #ee9933; }
+
+ul {
+  list-style: none;
+  margin-bottom: 10px; }
+
+ul li:before {
+  content: url(../img/chevron-right.png);
+  padding-right: 4px; }
+
+.clear:before,
+.clear:after {
+  content: " ";
+  display: table; }
+
+.clear:after {
+  clear: both; }
+
+.center-h {
+  display: block;
+  margin: 0 auto; }
+
+.center-text {
+  text-align: center; }
+
+.center-v {
+  display: block;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+.pad-left {
+  padding-left: 35%; }
+
+.slide {
+  display: block;
+  width: 100%;
+  clear: both; }
+  .slide img {
+    max-width: 100%; }
+  .slide .slide-title {
+    color: #fff;
+    background-color: #3DA7C1;
+    text-align: center; }
+  .slide .slide-content {
+    padding: 10px 15px;
+    display: block;
+    max-width: 800px;
+    height: 400px;
+    margin: 0 auto; }
+    .slide .slide-content ul {
+      display: inline-block;
+      margin-left: 10px; }
+      .slide .slide-content ul li {
+        padding-left: 10px; }
+  .slide .half-slide-v {
+    display: block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding: 0 10px; }
+  .slide .blue {
+    color: #2F839B; }
+  .slide .green {
+    color: #86B715; }

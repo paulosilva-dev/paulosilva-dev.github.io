@@ -1,0 +1,19 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+  font-size: 14px;
+  line-height: 1.6em;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}

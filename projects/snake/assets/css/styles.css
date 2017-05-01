@@ -1,0 +1,88 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"), url(http://fonts.gstatic.com/s/lato/v11/UyBMtLsHKBKXelqf4x7VRQ.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
+
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"), url(http://fonts.gstatic.com/s/lato/v11/1YwB1sO8YE1Lyjf12WNiUA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 1.6em; }
+
+body {
+  background-color: #fafafa;
+  color: #333;
+  font-family: 'Lato', Sans-serif; }
+
+::-moz-selection {
+  background-color: #263e59;
+  color: #dfffff; }
+
+::selection {
+  background-color: #263e59;
+  color: #dfffff; }
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: #2699ee; }
+
+h2 {
+  font-size: 1.8rem;
+  text-align: left;
+  font-weight: 300; }
+
+h3 {
+  font-size: 1.5rem;
+  text-align: left; }
+
+a, a:visited {
+  color: #2699ee; }
+
+a:hover {
+  color: #ee9933; }
+
+.text-center {
+  text-align: center; }
+
+.container {
+  display: block;
+  width: 400px;
+  margin: 0 auto; }
+
+.stats {
+  text-align: center;
+  color: #ee9933;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0; }
+  .stats .score {
+    font-size: 1em; }
+
+.level {
+  clear: both;
+  width: 400px;
+  margin-top: 4px; }
+
+.square {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  float: left;
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  border: 1px solid #444;
+  margin: 0; }

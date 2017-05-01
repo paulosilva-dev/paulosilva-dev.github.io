@@ -1,0 +1,98 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"), url(http://fonts.gstatic.com/s/lato/v11/UyBMtLsHKBKXelqf4x7VRQ.woff2) format("woff2");
+  unicode-range: U100-24F, U1E -1EFF, U20A -20AB, U20AD-20CF, U2C 58C 7F, UA720-A7FF; }
+
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"), url(http://fonts.gstatic.com/s/lato/v11/1YwB1sO8YE1Lyjf12WNiUA.woff2) format("woff2");
+  unicode-range: U0-0FF, U131, U152-153, U2C 6, U2DA, U2DC, U2000-206F, U2074, U20AC, U2212, U2215, UE0FF, UEFFD, UF000; }
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.6em; }
+
+body {
+  background-color: #fafafa;
+  color: #333;
+  font-family: 'Lato', Sans-serif; }
+
+::-moz-selection {
+  background-color: #263e59;
+  color: #8ee8d1; }
+
+::selection {
+  background-color: #263e59;
+  color: #8ee8d1; }
+
+h1 {
+  font-size: 3em;
+  text-align: center; }
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+  font-weight: 300; }
+
+h3 {
+  font-size: 1.5em;
+  text-align: center; }
+
+.list {
+  display: block;
+  background-color: #AACCEE;
+  width: 500px;
+  min-height: 800px;
+  margin: 10px auto 0 auto;
+  padding-top: 15px;
+  text-align: center;
+  border-radius: 10px;  }
+  .list button {
+    background-color: #263e59;
+    color: #8ee8d1;
+    border: none;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer; }
+  .list input {
+    background-color: #263e59;
+    color: #8ee8d1;
+    border: none;
+    margin: 5px;
+    padding: 5px; }
+  .list ul {
+    list-style-type: none; }
+  .list li {
+    display: block;
+    background-color: #2299cc;
+    color: #efe;
+    width: 90%;
+    margin: 1% auto 1% auto;
+    font-size: 2em;
+    -webkit-border-radius: 4px;
+            border-radius: 4px; }
+
+.deleteBtn {
+  display: inline-block;
+  color: #fff;
+  float: right;
+  margin: 5px;
+  background-color: #263e59;
+  width: 40px;
+  font-size: 26px;
+  cursor: pointer;
+  -webkit-border-radius: 2px;
+          border-radius: 2px; }
+
+.deleteBtn:hover {
+  background-color: #99CCff;
+  color: #263e59; }

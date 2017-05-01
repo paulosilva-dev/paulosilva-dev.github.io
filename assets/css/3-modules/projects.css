@@ -1,0 +1,82 @@
+.projects {
+  display: block;
+  width: 90%;
+  margin: 0 auto; }
+  .projects li {
+    display: block;
+    float: left;
+    list-style-type: none;
+    width: 33%; }
+    .projects li figure {
+      display: block;
+      width: 192px;
+      height: 192px;
+      padding: 0;
+      margin: 16px auto;
+      overflow: hidden;
+      border: 4px solid #ccc;
+      border: 4px solid #00d49f; }
+    .projects li img {
+      opacity: 0.7;
+      width: 192px;
+      height: 192px;
+      -webkit-transition: all 0.25s ease-out;
+      transition: all 0.25s ease-out; }
+    .projects li figcaption {
+      display: block;
+      position: relative;
+      -webkit-transition: all 0.4s ease-in-out 0s;
+      transition: all 0.4s ease-in-out 0s;
+      -webkit-transform: translate(0, -30px);
+          -ms-transform: translate(0, -30px);
+              transform: translate(0, -30px); }
+      .projects li figcaption h4 {
+        padding: 0 8px;
+        background-color: #033957;
+        color: #e6fcf4; }
+        .projects li figcaption h4:hover {
+          color: #fff; }
+      .projects li figcaption p {
+        display: block;
+        color: #333;
+        background-color: #cbefe0;
+        height: 200px;
+        line-height: 1.2em;
+        padding: 0 8px; }
+    .projects li:hover figcaption {
+      -webkit-transform: translate(0, -90px);
+          -ms-transform: translate(0, -90px);
+              transform: translate(0, -90px); }
+    .projects li:hover img {
+      opacity: 1;
+      -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+              transform: scale(1.1); }
+
+/* resolution breakpoints */
+/* 1010px breakpoint*/
+@media only screen and (max-width: 1010px) {
+  .projects {
+    width: 100%; }
+    .projects li {
+      width: 50%; }
+      .projects li figure {
+        margin: 16px auto; } }
+
+/* 600px breakpoint*/
+@media only screen and (max-width: 600px) {
+  .projects {
+    width: 100%; }
+    .projects li {
+      width: 100%; }
+      .projects li figure {
+        margin: 16px auto; } }
+
+/* 480px breakpoint*/
+@media only screen and (max-width: 480px) {
+  .projects {
+    width: 100%; }
+    .projects li {
+      width: 100%; }
+      .projects li figure {
+        margin: 16px auto; } }

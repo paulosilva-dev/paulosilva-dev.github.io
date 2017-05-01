@@ -1,0 +1,123 @@
+body {
+  padding-top: 50px; }
+
+section {
+  padding: 40px 0; }
+
+section#features {
+  background-color: #45B29E;
+  color: #fff;
+  padding: 20px 0; }
+  section#features ul li {
+    font-size: 22px;
+    list-style: none;
+    line-height: 2em; }
+    section#features ul li .glyphicon {
+      position: relative;
+      padding: 0 10px 0 0;
+      font-size: 0.9em;
+      top: 2px; }
+  section#features .brand-logo {
+    padding: 40px 0 0 0; }
+
+section#title {
+  background-color: #45B29E;
+  padding: 14px 0;
+  margin: 0; }
+  section#title h1 {
+    color: #fff; }
+
+section#about #accordion {
+  margin-top: 40px; }
+
+section#about img {
+  width: 100%;
+  padding: 0; }
+
+section#contact img {
+  width: 100%;
+  padding: 0; }
+
+section#contact textarea {
+  resize: none; }
+
+footer {
+  background-color: #333;
+  color: #fff;
+  font-size: 14px; }
+  footer .container {
+    padding: 30px 0 16px 0; }
+  footer li {
+    list-style-type: none;
+    display: inline;
+    padding: 0 20px; }
+    footer li a {
+      color: #fff; }
+      footer li a:hover {
+        color: #fff;
+        text-decoration: none; }
+
+.r-text {
+  text-align: right; }
+
+.navbar-default .navbar-brand {
+  color: #45B29E; }
+
+.brand-color-t {
+  color: #45B29E; }
+
+.jumbotron {
+  background: url("../img/site-jumbo-bg.jpg") no-repeat top center, #1d2428;
+  color: #fff;
+  height: 520px;
+  overflow: none; }
+  .jumbotron .app-btn {
+    width: 40%;
+    margin-right: 30px; }
+  .jumbotron h1 {
+    margin-top: 50px; }
+  .jumbotron p {
+    margin-bottom: 140px; }
+  .jumbotron .phone-img {
+    position: relative;
+    width: 340px;
+    bottom: -22px;
+    left: 40px; }
+
+#middle img {
+  width: 100%;
+  padding: 4px; }
+
+@media (max-width: 991px) {
+  .phone-img {
+    display: none; }
+  #middle .col-md-4 {
+    padding-bottom: 10px; }
+  footer {
+    text-align: center; }
+    footer .r-text {
+      text-align: center; }
+  .brand-logo {
+    display: none; } }
+
+@media (max-width: 767px) {
+  .jumbotron {
+    height: 400px; }
+    .jumbotron p {
+      margin-bottom: 10px; }
+    .jumbotron .app-btn {
+      width: 40%;
+      margin: 10px 5%;
+      display: block;
+      float: left; } }
+
+@media (max-width: 600px) {
+  .jumbotron {
+    height: 500px; }
+    .jumbotron p {
+      margin-bottom: 30px; }
+    .jumbotron .app-btn {
+      width: 50%;
+      margin: 10px auto;
+      display: block;
+      float: none; } }

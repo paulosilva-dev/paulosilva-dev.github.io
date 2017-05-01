@@ -1,0 +1,31 @@
+<h2>New Order</h2>
+<div class="well well-light">
+  <div class="alert alert-warning" role="alert" ng-show="warnings" ng-repeat="warning in warnings">{{ warning }}</div>
+  <form>
+    <div class="form-group">
+      <label for="orderNo">Order Number:</label>
+      <input type="text" class="form-control" id="orderNo" placeholder="{{ orderNo }}" disabled>
+    </div>
+
+    <label for="product">Product:</label>
+    <div class="form-group form-inline">
+      <select name="product" class="form-control" id="product" ng-model="productID">
+        <option value="{{ product.id }}" ng-repeat="product in products">{{ product.id + " - " + product.name }}</option>
+      </select>
+
+      <label for="quantity" class="pad-left">Quantity</label>
+      <input type="number" name="quantity" id="quantity" min="1" max="20" value="1" ng-model="quantity">
+    </div>
+    <div class="form-group">
+      <label for="customer">Customer:</label>
+      <select name="customer" class="form-control" id="customer" ng-model="customerID">
+        <option value="{{ customer.id }}" ng-repeat="customer in customers">{{ customer.id + " - " + customer.name }}</option>
+      </select>
+
+    </div>
+
+
+    <button type="submit" class="btn btn-success" ng-click="addOrder()">Add New Order</button>
+  </form>
+</div>
+<a href="javascript:history.back()" class="btn btn-primary">Back</a>

@@ -1,0 +1,49 @@
+body {
+  background-color: #293134;
+  background: url("/assets/img/bg-f.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  font-family: 'Lato', Sans-serif; }
+
+::-moz-selection {
+  background-color: #263e59;
+  color: #dfffff; }
+
+::selection {
+  background-color: #263e59;
+  color: #dfffff; }
+
+h1 {
+  font-size: 3rem;
+  text-align: left; }
+
+h2 {
+  font-size: 2rem;
+  text-align: left;
+  font-weight: 300; }
+
+h3 {
+  font-size: 1.5rem;
+  text-align: left; }
+
+a, a:visited {
+  color: #2699ee; }
+
+a:hover {
+  color: #ee9933; }
+
+.usr-avatar {
+  display: block;
+  margin: 10px auto;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: 4px solid #293134;
+  -webkit-box-shadow: 0px 2px 3px 0px #293134;
+          box-shadow: 0px 2px 3px 0px #293134; }
+
+.back-btn {
+  font-size: 4rem;
+  color: #DDD; }
+
+.back-btn:hover {
+  color: #ffbb66; }

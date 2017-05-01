@@ -1,0 +1,52 @@
+body {
+  background-color: #fafafa;
+  color: #333;
+  font-family: 'Lato', Sans-serif; }
+
+::-moz-selection {
+  background-color: #fafafa;
+  color: #333; }
+
+::selection {
+  background-color: #fafafa;
+  color: #333; }
+
+h1 {
+  font-size: 2rem;
+  text-align: left; }
+
+h2 {
+  font-size: 1.7rem;
+  text-align: left;
+  font-weight: 500;
+  padding-bottom: 4px;
+  padding-top: 4px; }
+
+h3 {
+  font-size: 1.1rem;
+  text-align: left;
+  font-weight: 600;
+  padding-bottom: 4px;
+  padding-top: 8px; }
+
+a, a:visited {
+  color: #2699ee; }
+
+a:hover {
+  color: #ee9933; }
+
+ul {
+  list-style: none;
+  margin-bottom: 10px; }
+
+ul li:before {
+  content: url(../img/chevron-right.png);
+  padding-right: 4px; }
+
+.clear:before,
+.clear:after {
+  content: " ";
+  display: table; }
+
+.clear:after {
+  clear: both; }

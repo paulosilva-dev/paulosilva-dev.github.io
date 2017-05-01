@@ -1,0 +1,62 @@
+body {
+	background-color: #DDD;
+	color: #333;
+	font-family: 'Lato', Sans-serif;
+}
+
+main {
+	background-color: #AAA;
+	width: 280px;
+	height: 350px;
+	margin: 50px auto;
+	padding: 2.5px;
+}
+.input {
+	background-color: #EEE;
+	width: 275px;
+	height: 65px;
+	float: left;
+	margin: 2.5px;
+	padding: 0;
+}
+.prev {
+	color: #666;
+	width: 260px;
+	height: 20px;
+	margin: 2px 5px 0 10px;	
+	padding: 0;
+}
+.current {
+	height: 30px;
+	width: 260px;
+	margin: 0 5px 5px 5px;
+	padding: 0;
+}
+
+#number{
+	font-size: 40px;
+	padding: 0;
+	margin: 0;
+  	line-height: 40px;
+	
+}
+.button {
+	background-color: #CCC;
+	width: 65px;
+	height: 65px;
+	float: left;
+	margin: 2.5px;
+}
+
+.button:hover {
+	cursor: pointer;
+}
+.button p {
+	font-size: 35px;
+	text-align: center;
+}
+
+a {
+	color: #2299cc;
+}
+

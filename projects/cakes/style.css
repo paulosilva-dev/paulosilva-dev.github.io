@@ -1,0 +1,153 @@
+body {
+	background-color: #f7fcdb;
+	color: #7F735A;
+	font-family: 'Lato', Sans-serif;
+}
+
+a {
+	color: #9ecc63;
+}
+
+h2 {
+	padding: 0 0 10px 0;
+}
+
+h4 {
+	padding: 15px 0 2px 10px;
+}
+
+ul {
+	margin: 10px 0 0 30px;
+}
+
+ol {
+	margin: 10px 0 0 30px;
+}
+
+li {
+	margin: 5px 0 0 0;
+}
+
+#topbar {
+	width: auto;
+	height: 120px;
+	margin: 0 auto;
+	background-color: #7F735A;
+	}
+#topbar h1 {
+	color: #F1CA63;
+    font-size: 50px;
+	font-weight: 600;
+	width: 600px;
+	padding: 55px 0 0 0;
+	margin: 0 auto;
+}
+
+#nav {
+	background-color: #F1CA63;
+	width: auto;
+	height: 33px;
+	padding: 2px 0 0 0;
+}
+#nav ul {
+	width: 600px;
+	margin: 0 auto;
+}
+
+#nav li {
+	display: inline;
+}
+
+#nav a{
+	color: #fff1d3;
+	font-size: 25px;
+	text-decoration: none;
+	padding: 0 16px 0 2px;
+}
+
+#nav a:hover{
+	color: #627206;
+	border-bottom: 3px solid #a9db6a;
+}
+
+.active-page {
+	border-bottom: 3px solid #ffedc1;	
+}
+
+#content {
+	width: 600px;
+	margin: 30px auto;
+}
+
+.receitas{
+	margin: 10px 0 0 0;
+}
+
+.receitas ul{
+	list-style: none;
+	margin: 0 0 0 0;
+}
+
+.receitas li{
+	margin: 0 0 10px 0;
+}
+.menu-item {
+	height: 80px;
+	margin: 0 0 10px 0;
+	padding: 5px;
+	border: 2px solid #a9db6a;
+}
+
+.menu-item:hover {
+	background-color: #FEFEEE;
+}
+
+.menu-item img{
+	float: left;
+	margin: 5px;
+}
+.desc {
+	float: left;
+	margin: 4px 0 0 20px;
+	color: #9ecc63;
+}
+.desc h3 {
+	margin: 0 0 3px 0;
+}
+.desc p {
+	margin: 0 0 0 10px;
+}
+.text-box{
+	margin: 10px 0 10px 0;
+	padding: 16px;
+	border: 2px solid #a9db6a;
+}
+
+.text-box img{
+	float: right;
+	border: 2px solid #a9db6a;
+	margin: 5px;
+}
+
+.top-link{
+	height: 36px;
+	margin: 0 0 10px 0;
+	padding: 18px 0;
+	border: 2px solid #a9db6a;
+}
+.top-link:hover {
+	background-color: #FEFEEE;
+}
+
+.recipe-box{
+	margin: 10px 0 10px 0;
+	min-height: 210px;
+	padding: 16px;
+	border: 2px solid #a9db6a;	
+}
+
+.recipe-box img{
+	float: right;
+	border: 2px solid #a9db6a;
+	margin: 5px;
+}
