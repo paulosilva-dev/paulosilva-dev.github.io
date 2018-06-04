@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>JavaScript Objects</title>
+
+	<meta name="A Presentations about JavaScript Objects" content="">
+
+  <!-- Mobile-friendly viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- Style sheet link -->
+	<link href="assets/css/styles.css" rel="stylesheet" media="all">
+</head>
+<body>
+  <div class="progress-bar">
+    <div class="progress"></div>
+  </div>
+  <div class="arrows">
+    <div class="arrow-l">
+      <img src="assets/img/arrow-left.png" alt="">
+    </div>
+    <div class="arrow-r">
+      <img src="assets/img/arrow-right.png" alt="">
+    </div>
+  </div>
+	<main role="main">
+
+    <!--slide-->
+    <div class="slide">
+      <h1 class="slide-title">JS Objects</h1>
+      <div class="slide-content">
+        <h2 class="green">I'm going to talk about:</h2>
+        <ul>
+          <li>OOP</li>
+          <li>JavaScript Objects</li>
+          <li>Prototypes</li>
+          <li>Object Creation Patterns</li>
+        </ul>
+      </div>
+    </div>
+    <!--slide-->
+    <div class="slide">
+      <h1 class="slide-title">JS Objects</h1>
+      <div class="slide-content">
+        <h2 class="green">A little intro about Objects and OOP:</h2>
+        <ul>
+          <li>Object Oriented Programming (OOP) refers to using self-contained pieces of code to develop applications.</li>
+          <li>These self-contained pieces of code are called objects.</li>
+          <li>These objects can be more complex data types.</li>
+          <li>These objects can perform actions (methods).</li>
+        </ul>
+      </div>
+    </div>
+    <!--slide-->
+    <div class="slide">
+      <h1 class="slide-title">A litle intro about Objects and OOP:</h1>
+      <div class="slide-content">
+          <img src="assets/img/cat.jpg" alt="cat object picture">
+      </div>
+    </div>
+    <!--slide-->
+    <div class="slide">
+      <h1 class="slide-title">Advantages of OOP:</h1>
+      <div class="slide-content">
+        <ul>
+          <li>Abstraction</li>
+          <li>Encapsulation</li>
+          <li>Inheritance</li>
+          <li>Polymorphism</li>
+        </ul>
+      </div>
+    </div>
+    <!--slide-->
+    <div class="slide">
+      <h1 class="slide-title">Creating Objects in Javascript:</h1>
+      <div class="slide-content">
+        <ul>
+          <li>var obj1 = new Object();</li>
+          <li>var obj2 = {};</li>
+          <li>var obj3 = Object.create({});</li>
+        </ul>
+      </div>
+    </div>
+    <!--slide-->
+    <div class="slide">
+      <h1 class="slide-title">Acessing Object properties:</h1>
+      <div class="slide-content">
+        <br>
+        <code>
+        <pre>
+  <span class="comment">// dot notation</span>
+  obj.name = 'MyObject';
+  obj.name; <span class="comment">//'MyObject'</span>
+
+  <span class="comment">// bracket notation</span>
+  obj['name'] = 'MyObject';
+  obj['name']; <span class="comment">//'MyObject'</span>
+        </pre>
+        </code>
+      </div>
+    </div>
+    <!--slide-->
+    <div class="slide">
+      <h1 class="slide-title">Methods:</h1>
+      <div class="slide-content">
+        <br>
+        <code>
+        <pre>
+  obj.print = function () {
+    console.log(this.name);
+  };
+  obj.print(); <span class="comment">//'MyObject'</span>
+        </pre>
+          </code>
+        </div>
+        </div>
+    <!--slide-->
+    <div class="slide">
+      <h1 class="slide-title">Object literal:</h1>
+      <div class="slide-content">
+        <br>
+        <code>
+        <pre>
+  var person1 = {
+    name:"John" ,
+    greet: function() {
+      console.log("Hi I'm " + this.name);
+    }
+  };
+        </pre>
+        </code>
+      </div>
+    </div>
+    <!--slide-->
+    <div class="slide">
+      <h1 class="slide-title">Constructor function:</h1>
+      <div class="slide-content">
+        <br>
+        <code>
+        <pre>
+  var person2 = new Object();
+  person2.name = "John";
+  person2.greet = function() {
+      console.log("Hi I'm " + this.name);
+    };
+        </pre>
+        </code>
+      </div>
+    </div>
+    <!--slide-->
+    <div class="slide">
+      <h1 class="slide-title">Object.create()</h1>
+      <div class="slide-content">
+        <br>
+        <code>
+        <pre>
+  var person3 = Object.create({});
+  person3["name"] = "John";
+  person3["greet"] = function() {
+      console.log("Hi I'm " + this.name);
+    };
+        </pre>
+        </code>
+      </div>
+    </div>
+    <!--slide-->
+    <div class="slide">
+      <h1 class="slide-title">Javascrips Objects are peculiar.</h1>
+      <div class="slide-content">
+        <h3 class="green">But very flexible!</h3>
+        <ul>
+          <li>They are similar to Hash Maps</li>
+          <li>Methods and Properties are created in the same way</li>
+          <li>You can add properties / methods at any time</li>
+          <li>They don't have classes (yet - coming in ES6)</li>
+          <ul><li>But they have prototypes!</li></ul>
+        </ul>
+      </div>
+    </div>
+    <!--slide-->
+    <div class="slide">
+      <h1 class="slide-title">Prototypes</h1>
+      <div class="slide-content">
+        <ul>
+          <li>Prototypes allow us to implement inheritance in JS</li>
+          <li>They are not Classes!</li>
+          <li>A prototype is an object from which other objects inherit properties</li>
+        </ul>
+      </div>
+    </div>
+    <!--slide-->
+    <div class="slide">
+      <h1 class="slide-title">Prototypes</h1>
+      <div class="slide-content">
+        <ul>
+          <li>A property/method added to a prototype will be available to all it's instances</li>
+          <li>A property/method added to one of it's instances will not be available the prototype object or the other instances</li>
+          <li>You can overwrite a property/method in an instance</li>
+        </ul>
+      </div>
+    </div>
+    <!--slide-->
+    <div class="slide">
+      <h1 class="slide-title">The prototype chain</h1>
+      <div class="slide-content">
+        <div class="half-slide-v">
+          <p>Prototype inheritance works by going up the prototype chain if the called method/property is not found in the current object.</p>
+          <p>When the method is found, it won't look further.</p>
+        </div>
+        <div class="half-slide-v">
+          <img src="assets/img/PrototypeChain.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <!--slide-->
+    <div class="slide">
+      <h1 class="slide-title">How to scale</h1>
+      <div class="slide-content">
+        <h3 class="green">What about when you want a lot of objects?</h3>
+      </div>
+    </div>
+    <!--slide-->
+    <div class="slide">
+      <h1 class="slide-title">How to scale</h1>
+      <div class="slide-content">
+        <h3 class="green">What about when you want a lot of objects?</h3>
+        <h4>We can use:</h4>
+        <ul>
+          <li>Object.create( ) Pattern</li>
+          <li>Constructor Pattern</li>
+          <li>Factory Pattern</li>
+        </ul>
+      </div>
+    </div>
+
+    <!--slide-->
+    <div class="slide">
+      <h1 class="slide-title">Object.create( )</h1>
+      <div class="slide-content">
+       <p>With <span class="blue">Object.create( )</span> we use an object as the prototype for other objects.</p>
+       <p>This new object will inherit its properties from the prototype object.</p>
+       <p>New properties/methods added to the prototype object will be available in all created objects. (from that prototype)</p>
+      </div>
+    </div>
+
+    <!--slide-->
+    <div class="slide">
+      <h1 class="slide-title">Object.create( )</h1>
+      <div class="slide-content">
+       <h3>Creating the prototype Object:</h3>
+        <code>
+        <pre>
+  var person = {
+    name: "no name",
+    gender: "no gender",
+    init: function(name, gender){
+      this.name = name;
+      this.gender = gender;
+    },
+    greet: function(){
+      console.log("Hello my name is " + this.name);
+    }
+  };
+        </pre>
+        </code>
+      </div>
+    </div>
+
+    <!--slide-->
+    <div class="slide">
+      <h1 class="slide-title">Object.create( )</h1>
+      <div class="slide-content">
+       <h3>Creating an instance:</h3>
+        <code>
+        <pre>
+  var person1 = Object.create(person);
+  person1.init("Paulo", "m");
+  person1.greet(); <span class="comment">//"Hello my name is Paulo"</span>
+        </pre>
+        </code>
+      </div>
+    </div>
+    <!--slide-->
+    <div class="slide">
+      <h1 class="slide-title">Constructor</h1>
+      <div class="slide-content">
+       <p>A constructor is a function used for initializing new objects.</p>
+       <p>You use the new keyword to call the constructor.</p>
+       <p>It has an associated prototype object that can be accessed: <span class="green">funcName.prototype</span></p>
+      </div>
+    </div>
+    <!--slide-->
+    <div class="slide">
+      <h1 class="slide-title">Constructor</h1>
+      <div class="slide-content">
+        <code>
+        <pre>
+  var Person = function(name, gender){
+    this.name = name;
+    this.gender = gender;
+    this.greet = function(){
+      console.log("Hello my name is " + this.name);
+    };
+  };
+        </pre>
+        </code>
+      </div>
+    </div>
+    <!--slide-->
+    <div class="slide">
+      <h1 class="slide-title">Constructor</h1>
+      <div class="slide-content">
+        <code>
+        <pre>
+  var person1 = new Person("Paulo", "m");
+  person1.greet(); <span class="comment">//"Hello my name is Paulo"</span>
+  Person.prototype; <span class="comment">// *prototype* </span>
+        </pre>
+        </code>
+      </div>
+    </div>
+    <!--slide-->
+    <div class="slide">
+      <h1 class="slide-title">Inheritance with Constructor:</h1>
+      <div class="slide-content">
+        <code>
+        <pre>
+  var Employee = function(name, gender, jobTitle){
+   Person.call(this, name, gender);
+   this.jobTitle = jobTitle;
+  };
+  Employee.prototype =  Object.create(Person.prototype);
+        </pre>
+        </code>
+      </div>
+    </div>
+    <!--slide-->
+    <div class="slide">
+      <h1 class="slide-title">Factory</h1>
+      <div class="slide-content">
+       <p>Easy to understand.</p>
+       <p>Avoids "this" problems.</p>
+       <p>Flexible.</p>
+      </div>
+    </div>
+    <!--slide-->
+    <div class="slide">
+      <h1 class="slide-title">Factory</h1>
+      <div class="slide-content">
+        <code>
+        <pre>
+  var PersonFactory = function(name, gender){
+    var tmp = {};
+    tmp.name = name;
+    tmp.gender = gender;
+    tmp.greet = function(){
+      console.log("Hello my name is " + tmp.name);
+    };
+    return tmp;
+  };
+        </pre>
+        </code>
+      </div>
+    </div>
+    <!--slide-->
+    <div class="slide">
+      <h1 class="slide-title">Factory</h1>
+      <div class="slide-content">
+        <code>
+        <pre>
+  var person1 = PersonFactory("Paulo","m");
+  person1.greet(); <span class="comment">//"Hello my name is Paulo"</span>
+        </pre>
+        </code>
+      </div>
+    </div>
+
+    <!--slide-->
+    <div class="slide">
+      <h1 class="slide-title">Composition</h1>
+      <div class="slide-content">
+       <br>
+       <p class="pad-left-10">With Inheritance you decide you types based on what they ARE.</p>
+       <br>
+       <p  class="pad-left-10">With Composition you decide you types based on what they DO.</p>
+      </div>
+    </div>
+
+    <!--slide-->
+    <div class="slide">
+      <h1 class="slide-title">Factory Composition</h1>
+      <div class="slide-content">
+        <code>
+        <pre>
+  var PersonFactory = function(state, name, gender){
+    state.name = name;
+    state.gender = gender;
+    state.greet = function(){
+      console.log("Hello my name is " + state.name);
+    };
+    return state;
+  };
+        </pre>
+        </code>
+      </div>
+    </div>
+    <!--slide-->
+    <div class="slide">
+      <h1 class="slide-title">Factory Composition</h1>
+      <div class="slide-content">
+        <code>
+        <pre>
+  var RobotFactory = function(state, model, battery){
+    state.model = model;
+    state.battery = battery;
+    state.move = function(){ this.battery -= 20; };
+    state.isLowOnBattery = function(){
+      return this.battery <= 30;
+    };
+    return state;
+  };
+        </pre>
+        </code>
+      </div>
+    </div>
+
+    <!--slide-->
+    <div class="slide">
+      <h1 class="slide-title">Factory Composition</h1>
+      <div class="slide-content">
+        <code>
+        <pre>
+  var batman = PersonFactory( {}, "Bruce Wayne", "m");
+
+  var spaceRobot = RobotFactory( {}, "r2d2", 60);
+
+  var robocop = PersonFactory( {}, "Alex J. Murphy", "m");
+  robocop = RobotFactory( robocop,
+    "OCP Crime Prevention Unit 001", 100);
+        </pre>
+        </code>
+      </div>
+    </div>
+
+    <!--slide-->
+    <div class="slide">
+      <h1 class="slide-title">JS Objects</h1>
+      <div class="slide-content">
+       <h2 class="green center-text center-v">The End</h2>
+      </div>
+    </div>
+
+	</main>
+  <!-- End primary page content -->
+
+	<!-- importing javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script type='text/javascript' src='assets/js/bundle.js'></script>
+</body>
+</html>
